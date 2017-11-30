@@ -1,2 +1,4 @@
 # Wikijito7.github.io
-<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">
+<?php
+header("Location:wikyfg.me/index.php");
+?>
