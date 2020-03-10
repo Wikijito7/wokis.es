@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <script type="text/javascript" src="js/ej2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda en JavaScript</h1>
+    </header>
+
+    <article>
+        <form>
+            <label for="nombre">Nombre: </label><input type="text" id="nombre">
+            <br>
+            <label for="apell">Apellidos: </label><input type="text" id="apell">
+            <br>
+            <label for="telf">Teléfono: </label><input type="number" id="telf">
+        </form>
+        <br>
+        <button onclick="introducirContacto()">Introducir contacto</button>
+        <button onclick="borrarContacto()">Borrar Contacto</button>
+        <button onclick="buscarContacto()">Buscar Contacto</button>
+        <button onclick="buscarContactoComodin()">Buscar contacto comodín</button> <!--Es comodín porque es más cómodo de usar(?)-->
+        <button onclick="mostrarContactos(contactos)">Listado</button>
+        <button onclick="window.close()">Salir</button>
+        <button onclick="location.reload()">Borrar</button>
+
+        <table id="tabla"></table>
+    </article>
+
+</body>
+</html>
