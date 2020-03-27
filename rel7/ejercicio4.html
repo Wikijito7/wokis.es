@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 relación 7</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+<header><h1>Ejercicio 4 Relación 7</h1></header>
+<article>
+    <p class="enunciado">Comprobar todos los inputs del formulario.</p>
+    <form>
+        <label for="campo1">Campo 1:</label><input type="text" id="campo1" onclick="style.background = 'white'"><br>
+        <label for="campo2">Campo 2 (debe ser numérico):</label><input type="number" id="campo2" onclick="style.background = 'white'"><br>
+        <label for="postal">Código postal:</label><input type="number" id="postal" maxlength="5" onclick="style.background = 'white'"><br>
+        <label for="dni">DNI:</label><input type="text" id="dni" onclick="style.background = 'white'"><br>
+        <label for="email">Email:</label><input type="text" id="email" onclick="style.background = 'white'"><br>
+    </form>
+    <button onclick=validar()>Enviar</button>
+    <p class="respuesta" id="res"></p>
+    <p><a href="index.html">Volver al index</a></p>
+</article>
+<footer>
+    <p>Hecho por Cristian Andrades.</p>
+    <p>© 2020</p>
+</footer>
+<script type="text/javascript" src="js/ej4.js"></script>
+</body>
+</html>
