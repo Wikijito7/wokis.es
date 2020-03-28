@@ -1,6 +1,7 @@
 :root{
     --font-size: 1em;
     --width: 60%;
+    --nav: #272727;
 }
 
 body {
@@ -38,7 +39,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: #272727;
+    background-color: var(--nav);
     color: white;
     transition-duration: 0.25s;
 }
@@ -134,15 +135,30 @@ header.h1{
         display: list-item;
     }
 
-    nav p, .lista{
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 1em;
+    #icon{
+        width: 1em;
         margin: 0;
+        padding: 1em;
     }
 
     .lista{
-        float: right;
+        display: initial;
+        float:right;
+        text-align: right;
+    }
+
+    #icon:hover{
+        transition: 0.2s;
+        background: var(--nav);
+    }
+
+    .cosillas{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+        background: black;
+        align-content: center;
+        padding: 0;
     }
 
     nav li{
@@ -150,10 +166,14 @@ header.h1{
         gap: 1em;
     }
 
+    .left{
+        text-align:left;
+    }
+
     .right{
-        float: none;
         padding: 1em;
         margin: 0;
+        float: none;
     }
 
     img {
