@@ -1,6 +1,11 @@
+:root{
+    --font-size: 1em;
+    --width: 60%;
+}
+
 body {
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: var(--font-size);
     margin: 0;
     width: 100%;
     text-align: center;
@@ -8,7 +13,6 @@ body {
 
 nav {
     padding: 1px;
-    font-size: 1em;
     margin: 0 auto;
     background: black;
     color: white;
@@ -17,6 +21,7 @@ nav {
 nav ul {
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 nav li a {
@@ -45,8 +50,6 @@ nav li:hover {
 
 p.left {
     float: left;
-    font-size: 1em;
-    margin-top: 1em;
     margin-left: 2em;
     font-weight: bold;
 }
@@ -54,33 +57,33 @@ p.left {
 section {
     min-height: 300px;
     margin: 2em auto;
-    width: 60%;
+    width: var(--width);
+}
+
+.lista{
+    display: none;
 }
 
 #aboutme {
     padding: 1em;
 }
 
+p #aboutme{
+    text-align: justify;
+}
+
 #projects {
     padding: 1em;
     text-decoration: none;
-    width: 60%;
+    width: var(--width);
 }
 
-.ulProjects {
+#ulProjects {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 1.2em;
     list-style-type: none;
     gap: 1em;
     padding: 0;
-}
-
-@media screen and (max-width: 600px) {
-    .ulProjects {
-        display: list-item;
-        font-size: 1em;
-    }
 }
 
 .projectsText {
@@ -106,7 +109,7 @@ img {
 hr {
     border: 1px solid #595959;
     border-radius: 0.2em;
-    width: 60%;
+    width: var(--width);
 }
 
 header{
@@ -117,3 +120,52 @@ header.h1{
     margin-bottom: 0.2em;
 }
 
+@media only screen and (max-width: 710px){
+    :local{
+        --font-size: 1.2em;
+        --width: 70%;
+    }
+
+    body{
+        font-size: var(--font-size);
+    }
+
+    #ulProjects {
+        display: list-item;
+    }
+
+    nav p, .lista{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+        margin: 0;
+    }
+
+    .lista{
+        float: right;
+    }
+
+    nav li{
+        display: none;
+        gap: 1em;
+    }
+
+    .right{
+        float: none;
+        padding: 1em;
+        margin: 0;
+    }
+
+    img {
+        width: 160px;
+    }
+
+    hr{
+        width: var(--width);
+    }
+
+
+    #projects{
+        width: var(--width);
+    }
+}
