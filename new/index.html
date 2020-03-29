@@ -6,29 +6,30 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script defer src="js/wokis.js"></script>
 </head>
 <body>
     <nav>
         <div class="cosillas">
             <p class="left">Wokis</p>
-            <a class="lista"><i class="fas fa-list-ul" id="icon"></i></a>
+            <a id="lista" onclick="toggleList()"><i class="fas fa-list-ul" id="icon"></i></a>
         </div>
 
         <ul>
-            <li>Home</li>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Contact me</li>
-            <li class="right" id="twitter">Twitter</li>
-            <li class="right">Github</li>
+            <li class="navlist invisible"><a href="#top" onclick="toggleList()">Home</a></li>
+            <li class="navlist invisible"><a href="#about" onclick="toggleList()">About me</a></li>
+            <li class="navlist invisible"><a href="#project" onclick="toggleList()">Projects</a></li>
+            <li class="navlist invisible"><a href="" onclick="toggleList()">Contact me</a></li>
+            <li class="navlist invisible right" id="twitter"><a href="https://twitter.com/WokisHere" target="_blank" onclick="toggleList()"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li class="navlist invisible right"><a href="https://github.com/Wikijito7" target="_blank" onclick="toggleList()"><i class="fab fa-github"></i> Github</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header id="top">
         <h1>Wokis' Web</h1>
         <p>Developing things for fun.</p>
     </header>
-    <hr>
+    <hr id="about">
     <main>
         <section id="aboutme">
             <h1>About me</h1>
@@ -40,10 +41,34 @@
                 pupita qué dise usteer se calle ustée no te digo trigo por no llamarte Rodrigor.
             </p>
         </section>
-        <hr>
+        <hr id="project">
         <section id="projects">
             <h1>Projects</h1>
             <ul id="ulProjects">
+                <li>
+                <p class="titleProject">Lorem ipsum</p>
+                <p class="projectsText">Lorem fistrum te voy a borrar el cerito no puedor te va a hasé pupitaa condemor ese pedazo de. A gramenawer ese pedazo de me cago en tus muelas no puedor te va a hasé
+                    pupitaa tiene musho peligro torpedo a wan. Se calle ustée la caidita sexuarl al ataquerl me cago en tus muelas caballo blanco caballo negroorl ese hombree ese que llega
+                    llevame al sircoo ese pedazo de. A wan te va a hasé pupitaa me cago en tus muelas amatomaa quietooor ahorarr la caidita al ataquerl condemor. Ahorarr hasta luego Lucas
+                    pupita qué dise usteer se calle ustée no te digo trigo por no llamarte Rodrigor.
+                </p>
+            </li>
+                <li>
+                    <p class="titleProject">Lorem ipsum</p>
+                    <p class="projectsText">Lorem fistrum te voy a borrar el cerito no puedor te va a hasé pupitaa condemor ese pedazo de. A gramenawer ese pedazo de me cago en tus muelas no puedor te va a hasé
+                        pupitaa tiene musho peligro torpedo a wan. Se calle ustée la caidita sexuarl al ataquerl me cago en tus muelas caballo blanco caballo negroorl ese hombree ese que llega
+                        llevame al sircoo ese pedazo de. A wan te va a hasé pupitaa me cago en tus muelas amatomaa quietooor ahorarr la caidita al ataquerl condemor. Ahorarr hasta luego Lucas
+                        pupita qué dise usteer se calle ustée no te digo trigo por no llamarte Rodrigor.
+                    </p>
+                </li>
+                <li>
+                    <p class="titleProject">Lorem ipsum</p>
+                    <p class="projectsText">Lorem fistrum te voy a borrar el cerito no puedor te va a hasé pupitaa condemor ese pedazo de. A gramenawer ese pedazo de me cago en tus muelas no puedor te va a hasé
+                        pupitaa tiene musho peligro torpedo a wan. Se calle ustée la caidita sexuarl al ataquerl me cago en tus muelas caballo blanco caballo negroorl ese hombree ese que llega
+                        llevame al sircoo ese pedazo de. A wan te va a hasé pupitaa me cago en tus muelas amatomaa quietooor ahorarr la caidita al ataquerl condemor. Ahorarr hasta luego Lucas
+                        pupita qué dise usteer se calle ustée no te digo trigo por no llamarte Rodrigor.
+                    </p>
+                </li>
                 <li>
                     <p class="titleProject">Lorem ipsum</p>
                     <p class="projectsText">Lorem fistrum te voy a borrar el cerito no puedor te va a hasé pupitaa condemor ese pedazo de. A gramenawer ese pedazo de me cago en tus muelas no puedor te va a hasé

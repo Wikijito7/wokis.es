@@ -10,6 +10,7 @@ body {
     margin: 0;
     width: 100%;
     text-align: center;
+
 }
 
 nav {
@@ -17,6 +18,8 @@ nav {
     margin: 0 auto;
     background: black;
     color: white;
+    width: 100%;
+    position: fixed;
 }
 
 nav ul {
@@ -25,20 +28,19 @@ nav ul {
     list-style-type: none;
 }
 
-nav li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav li {
-    display: inline-grid;
-    padding: 1em;
+.navlist {
     margin: 0;
     text-align: justify;
     cursor: pointer;
 }
 
-nav li:hover {
+.navlist a{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+.navlist a:hover {
     background-color: var(--nav);
     color: white;
     transition-duration: 0.25s;
@@ -61,7 +63,7 @@ section {
     width: var(--width);
 }
 
-.lista{
+#lista{
     display: none;
 }
 
@@ -89,6 +91,10 @@ p #aboutme{
 
 .projectsText {
     text-align: justify;
+}
+
+.invisible {
+    display: inline-grid;
 }
 
 .titleProject{
@@ -121,7 +127,7 @@ header.h1{
     margin-bottom: 0.2em;
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 740px){
     :local{
         --font-size: 1.2em;
         --width: 70%;
@@ -141,7 +147,7 @@ header.h1{
         padding: 1em;
     }
 
-    .lista{
+    #lista{
         display: initial;
         float:right;
         text-align: right;
@@ -161,9 +167,17 @@ header.h1{
         padding: 0;
     }
 
-    nav li{
-        display: none;
+    .navlist{
         gap: 1em;
+        padding: 1em;
+    }
+
+    .visible{
+        display: list-item;
+    }
+
+    .invisible{
+        display: none;
     }
 
     .left{
@@ -183,7 +197,6 @@ header.h1{
     hr{
         width: var(--width);
     }
-
 
     #projects{
         width: var(--width);
