@@ -3,6 +3,8 @@
     --width: 60%;
     --nav: #272727;
     --secondarycolor: #7f7f7f;
+    --link: #1f66e5;
+    --linkhover: #1347a4;
 }
 
 body {
@@ -86,11 +88,11 @@ section {
 
 #aboutme a {
     text-decoration: none;
-    color: #1f66e5
+    color: var(--link);
 }
 
 #aboutme a:hover {
-    color: #1347a4
+    color: var(--linkhover);
 }
 
 #projects {
@@ -114,6 +116,8 @@ section {
 
 .projectsText {
     text-align: justify;
+    margin-top: 0.5em;
+    min-height: 100px;
 }
 
 .invisible {
@@ -123,7 +127,18 @@ section {
 .titleProject{
     font-weight: bold;
     font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
+
+#projects a{
+    text-decoration: none;
+    color: var(--link);
+}
+
+#projects a:hover{
+    color: var(--linkhover);
+}
+
 footer {
     background: black;
     padding: 1em;
@@ -132,8 +147,13 @@ footer {
     margin-bottom: 0;
 }
 
-img {
+#aboutme img {
     border-radius: 50%;
+}
+
+li img{
+    margin-top: 0;
+    height: 80px;
 }
 
 hr {
@@ -208,7 +228,7 @@ header.h1{
         float: none;
     }
 
-    img {
+    #aboutme img {
         width: 160px;
     }
 
