@@ -2,6 +2,7 @@
     --font-size: 1em;
     --width: 60%;
     --nav: #272727;
+    --secondarycolor: #7f7f7f;
 }
 
 body {
@@ -11,6 +12,18 @@ body {
     width: 100%;
     text-align: center;
     min-width: 350px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--nav);
 }
 
 nav {
@@ -71,8 +84,13 @@ section {
     padding: 1em;
 }
 
-p #aboutme{
-    text-align: justify;
+#aboutme a {
+    text-decoration: none;
+    color: #1f66e5
+}
+
+#aboutme a:hover {
+    color: #1347a4
 }
 
 #projects {
@@ -81,9 +99,14 @@ p #aboutme{
     width: var(--width);
 }
 
+.subtitle{
+    color: var(--secondarycolor);
+    font-size: 1em;
+}
+
 #ulProjects {
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     list-style-type: none;
     gap: 1em;
     padding: 0;
@@ -143,8 +166,8 @@ header.h1{
 
     #icon{
         width: 1em;
-        margin: 0;
         padding: 1em;
+        margin: 0 2em 0 0;
     }
 
     #lista{
@@ -153,15 +176,10 @@ header.h1{
         text-align: right;
     }
 
-    #icon:hover{
-        transition: 0.2s;
-        background: var(--nav);
-    }
-
     .cosillas{
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
-        width: 70%;
+        width: 100%;
         background: black;
         align-content: center;
         padding: 0;
