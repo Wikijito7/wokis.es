@@ -89,7 +89,7 @@ section {
 
 #aboutme p{
     width: 50%;
-    margin-left: 25%;
+    margin: 1em auto;
 }
 
 #aboutme a {
@@ -179,7 +179,7 @@ header.h1{
 @media only screen and (max-width: 760px){
     :local{
         --font-size: 1.2em;
-        --width: 70%;
+        --width: 100%;
     }
 
     body{
@@ -238,11 +238,11 @@ header.h1{
         width: 160px;
     }
 
-    hr{
+    hr, section, #projects {
         width: var(--width);
     }
 
-    #projects{
-        width: var(--width);
+    #aboutme p {
+        width: 100%;
     }
 }
