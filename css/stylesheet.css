@@ -220,6 +220,7 @@ header.h1{
     .navlist{
         gap: 1em;
         padding: 1em;
+        width: inherit;
     }
 
     .visible{
