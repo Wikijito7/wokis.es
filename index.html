@@ -1,23 +1,123 @@
-<html>
-<center>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>La web de Wiky</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta charset="UTF-8">
+    <title>Wokis' web</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script defer src="js/wokis.js"></script>
 </head>
 <body>
-    <div id="first">
-        <p>Knock knock...</p>
+<nav>
+    <div class="cosillas">
+        <p class="left">Wokis</p>
+        <a id="lista" onclick="toggleList()"><i class="fas fa-list-ul" id="icon"></i></a>
     </div>
-    <div id="second">
-        <span><img src="kitty.gif"></img></span>       
-    </div>
-</body>
+
+    <ul>
+        <li class="navlist invisible"><a href="#top" onclick="toggleList()">Home</a></li>
+        <li class="navlist invisible"><a href="#about" onclick="toggleList()">About me</a></li>
+        <li class="navlist invisible"><a href="#project" onclick="toggleList()">Projects</a></li>
+        <!--<li class="navlist invisible"><a href="" onclick="toggleList()">Contact me</a></li>-->
+        <li class="navlist invisible" id="twitter"><a href="https://twitter.com/WokisHere" target="_blank"
+                                                      onclick="toggleList()"><i class="fab fa-twitter"></i> Twitter</a>
+        </li>
+        <li class="navlist invisible"><a href="https://github.com/Wikijito7" target="_blank" onclick="toggleList()"><i
+                class="fab fa-github"></i> Github</a></li>
+    </ul>
+</nav>
+
+<header id="top">
+    <h1>Wokis' Web</h1>
+    <p class="subtitle">Developing things for fun.</p>
+</header>
+<hr id="about">
+<main>
+    <section id="aboutme">
+        <h1>About me</h1>
+        <img alt="it's a me!" src="img/me.jpg">
+        <br>
+        <p id="aboutmetext">I'm Wokis! My real name is Cristian. I love cats and Space. I mostly create backend
+            systems and applications but
+            I can do frontend solutions as well. You can check my work down below!
+            <br>Also, you can contact me using <a href="https://twitter.com/WokisHere">Twitter</a> or sending me an <a
+                    href="mailto:wikyfg@gmail.com">email</a>.
+        </p>
+    </section>
+    <hr id="project">
+    <section id="projects">
+        <h1>Projects</h1>
+        <p class="subtitle">These are the projects I've worked on.</p>
+        <ul id="ulProjects">
+            <li>
+                <p class="titleProject">ProjectAlpha</p>
+                <img src="img/pa.png" alt="logo projectalpha">
+                <p class="projectsText">
+                    ProjectAlpha was a Minecraft server. We developed every plugin that it had from scratch, doing it in
+                    Java.
+                </p>
+                <p class="subtitle">Developed with <a href="https://cadox8.es" target="_blank">Cadox</a></p>
+                <a href="https://github.com/cadox8/PA" target="_blank">Github repository</a>
+            </li>
+            <li>
+                <p class="titleProject">CardsCardsCards</p>
+                <img src="img/ccc.png" alt="logo cardscardscards">
+                <p class="projectsText">
+                    CardsCardsCards is a cards game based on YuGiOh cards with funny pictures from Spain. The game was
+                    developed in Java and it had both a Client and a Server module.
+                </p>
+                <p class="subtitle">Developed with <a href="https://cadox8.es" target="_blank">Cadox</a></p>
+                <p><a href="https://wikijito7.github.io/CardsCardsCards/">Game's page</a></p>
+            </li>
+            <li>
+                <p class="titleProject">Spanish Card Game</p>
+                <img>
+                <p class="projectsText">
+                    Spanish Card Game was a project written in Python. It is based on "Mona" spanish card game and
+                    recreates it automatically on a window. It accepts up to 10 players.
+                    It is based on a card library and modified to accept the Pygame library to make it look a little
+                    more nice and have a GUI support. The game can be played infinitely and always
+                    wins one.
+                </p>
+                <a href="https://github.com/Wikijito7/cards" target="_blank">Github repository</a>
+            </li>
+            <li>
+                <p class="titleProject">LifeProject</p>
+                <img>
+                <p class="projectsText">
+                    LifeProject was a project made in Java where I intended to make a survival and city management where
+                    you had to be the "god" of a
+                    civilization and make them go as big as possible. You should watch out for them, mostly food, water
+                    and some basic resources like wood and stone. I planned to make it hard for them to
+                    prosper and grow up, but if it happened, it would be easy to continue to late game. It would have
+                    had enemies that raided your village and some random events that would have made it hard.
+                    At this moment the game is paused. It made it to de "0.8-indev" version.
+                </p>
+            </li>
+            <li>
+                <p class="titleProject">SpaceDroid</p>
+                <img src="img/logospacedroid.png" alt="logo spacedroid">
+                <p class="projectsText">
+                    SpaceDroid was a game originally made for Android using block coding on MIT's AppInventor2 website.
+                    It was ported to Java, where is it right now. The game has a "retro"-like style
+                    where every texture is a 8bits 32x32px pixel-art. There are 3 main space ships for the user and it
+                    featured up to 6 different enemies with different health. Also, it had a shop where
+                    you can change the munition, the ship or buy some upgrades for it. It was an infinite game where the
+                    difficulty maintained. The position and the enemies were selected randomly and
+                    it was likely that you couldn't have two games that were similar.
+                </p>
+                <a href="https://github.com/Wikijito7/spacedroid" target="_blank">Github repository</a>
+            </li>
+        </ul>
+    </section>
+</main>
 <footer>
-  
-  <p>Made by Wokis with <3</p>
-  <br>Twitter: <a href="https://twitter.com/WokisHere">What about.. here?</a></br>
-  <br>AthoneDevs © 2019.</br>
-   
+    Wokis' website <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Wokis.<br>
+    Copyright © 2020 Wokis.<br>
+    <a href="https://github.com/Wikijito7/Wikijito7.github.io">I'm open source!</a>
 </footer>
-</center>
+</body>
 </html>

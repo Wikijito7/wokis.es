@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: var(--font-size);
     margin: 0;
     width: 100%;
@@ -110,6 +110,7 @@ section {
 .subtitle{
     color: var(--secondarycolor);
     font-size: 1em;
+    font-style: italic;
 }
 
 #ulProjects {
@@ -148,9 +149,14 @@ section {
 footer {
     background: black;
     padding: 1em;
-    font-size: 0.75em;
+    font-size: 0.9em;
     color: white;
     margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--link);
 }
 
 #aboutme img {
