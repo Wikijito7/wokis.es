@@ -5,6 +5,10 @@
     --secondarycolor: #7f7f7f;
     --link: #1f66e5;
     --linkhover: #1347a4;
+    --code-width: 5.5em;
+    --java: #ec2025;
+    --python: #306998;
+    --js: #ffffff;
 }
 
 body {
@@ -14,6 +18,7 @@ body {
     width: 100%;
     text-align: center;
     min-width: 350px;
+    align: center;
 }
 
 body::-webkit-scrollbar {
@@ -111,20 +116,54 @@ section {
     color: var(--secondarycolor);
     font-size: 1em;
     font-style: italic;
+    margin-top: auto;
 }
 
 #ulProjects {
-    display: inline-grid;
+    /* display: inline-grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     list-style-type: none;
     gap: 1.5em;
-    padding: 0;
+    padding: 0; */
+    display: flex;
+  	justify-content: center;
+  	width: 960px;
+  	max-width: 100%;
+  	margin: auto;
+    flex-wrap: wrap;
 }
 
 .projectsText {
     text-align: justify;
-    margin-top: 0.5em;
+    margin: 0.5em;
     min-height: 100px;
+    margin-top: auto;
+}
+
+.col{
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+	flex: 1 1 270px;
+  margin: 1em;
+}
+
+.java{
+  border: 1px solid var(--java);
+  border-radius: 0.8em;
+  background: var(--java);
+  color: #ffffff;
+  width: var(--code-width);
+  margin-top: auto;
+}
+
+.py{
+  border: 1px solid var(--python);
+  border-radius: 0.8em;
+  background: var(--python);
+  color: #ffffff;
+  width: var(--code-width);
+  margin-top: auto;
 }
 
 .invisible {
@@ -140,6 +179,8 @@ section {
 #projects a{
     text-decoration: none;
     color: var(--link);
+    margin-bottom: 0.5em;
+    margin-top: auto;
 }
 
 #projects a:hover{
@@ -161,9 +202,10 @@ footer a {
 
 #aboutme img {
     border-radius: 50%;
+    width: 150px;
 }
 
-li img{
+.col img{
     margin-top: 0;
     height: 80px;
 }
@@ -193,7 +235,7 @@ header.h1{
     }
 
     #ulProjects {
-        display: list-item;
+        flex-wrap: wrap;
     }
 
     #icon{
@@ -243,10 +285,6 @@ header.h1{
         padding: 1em;
         margin: 0;
         float: none;
-    }
-
-    #aboutme img {
-        width: 160px;
     }
 
     hr, section, #projects {
