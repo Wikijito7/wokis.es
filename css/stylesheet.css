@@ -6,6 +6,7 @@
     --link: #1f66e5;
     --linkhover: #1347a4;
     --code-width: 5.5em;
+    --code-radius: 0.65em;
     --java: #ec2025;
     --python: #306998;
     --js: #ffffff;
@@ -120,14 +121,9 @@ section {
 }
 
 #ulProjects {
-    /* display: inline-grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    list-style-type: none;
-    gap: 1.5em;
-    padding: 0; */
     display: flex;
   	justify-content: center;
-  	width: 960px;
+  	width: 1280px;
   	max-width: 100%;
   	margin: auto;
     flex-wrap: wrap;
@@ -144,13 +140,13 @@ section {
   display: flex;
 	flex-direction: column;
   align-items: center;
-	flex: 1 1 270px;
+	flex: 1 1 350px;
   margin: 1em;
 }
 
 .java{
   border: 1px solid var(--java);
-  border-radius: 0.8em;
+  border-radius: var(--code-radius);
   background: var(--java);
   color: #ffffff;
   width: var(--code-width);
@@ -159,7 +155,7 @@ section {
 
 .py{
   border: 1px solid var(--python);
-  border-radius: 0.8em;
+  border-radius: var(--code-radius);
   background: var(--python);
   color: #ffffff;
   width: var(--code-width);
@@ -193,6 +189,7 @@ footer {
     font-size: 0.9em;
     color: white;
     margin-bottom: 0;
+    margin-top: auto;
 }
 
 footer a {
@@ -225,9 +222,13 @@ header.h1{
 }
 
 @media only screen and (max-width: 760px){
-    :local{
-        --font-size: 1.2em;
-        --width: 100%;
+    :root{
+        --font-size: 1.05em;
+        --width: 90%;
+    }
+
+    header {
+      padding-bottom: 3em;
     }
 
     body{
@@ -288,10 +289,12 @@ header.h1{
     }
 
     hr, section, #projects {
+        margin: auto;
         width: var(--width);
     }
 
     #aboutme p {
-        width: 100%;
+        width: var(--width);
+        text-align: justify;
     }
 }
