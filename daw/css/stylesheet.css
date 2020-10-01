@@ -76,6 +76,7 @@ article {
 	max-width: 100%;
 	margin: auto;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .container {
@@ -91,8 +92,8 @@ article {
 }
 
 article p {
-  margin: 1em;
   text-align: justify;
+  margin: 1em;
 }
 
 footer {
