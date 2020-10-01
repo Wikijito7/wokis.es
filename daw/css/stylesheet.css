@@ -2,6 +2,10 @@
   --buttoncolor: #edbc64;
   --buttoncolorhover: #e8a836;
   --bodycolor: #6495ed;
+  --link: #1f66e5;
+  --linkhover: #1347a4;
+  --code: #40e0d0;
+  --heart: purple;
 }
 
 body {
@@ -109,15 +113,9 @@ footer a {
 }
 
 .fa-code {
-  color: #40e0d0;
+  color: var(--code);
 }
 
 .fa-heart {
-  color: purple;
-}
-
-@media only screen and (max-width: 760px){
-  td {
-    font-size: 1.2em;
-  }
+  color: var(--heart);
 }

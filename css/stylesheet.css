@@ -10,6 +10,8 @@
     --java: #ec2025;
     --python: #306998;
     --js: #ffffff;
+    --code: #40e0d0;
+    --heart: purple;
 }
 
 body {
@@ -129,11 +131,13 @@ section {
     flex-wrap: wrap;
 }
 
+.noimage {
+  height: 80px;
+}
+
 .projectsText {
     text-align: justify;
-    margin: 0.5em;
     min-height: 100px;
-    margin-top: auto;
 }
 
 .col{
@@ -219,6 +223,14 @@ header{
 
 header.h1{
     margin-bottom: 0.2em;
+}
+
+.fa-code {
+  color: var(--code);
+}
+
+.fa-heart {
+  color: var(--heart);
 }
 
 @media only screen and (max-width: 760px){
