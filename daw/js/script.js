@@ -1,10 +1,59 @@
-function sumar() {
-  var a = parseInt(prompt("Dame un primer número para hacer una suma.", "5"));
-  var b = parseInt(prompt("Dame un segundo número para hacer una suma.", "8"));
+// there's going to be some code sometime in the future.
+// RESPONSIVE
+var lista = false;
+var navlist = document.getElementById("nav");
 
-  if (!isNaN(a) && !isNaN(b)){
-    document.getElementById('res').innerText = "El resultado de la suma " + a + "+" + b + "=" + (a+b);
-  } else{
-    document.getElementById('res').innerText = "Algo ha salido mal. Alguno de los números no es válido.";
+// PARA FICHAR/DESFICHAR (MOSTRAR FUNCIONALIDAD, NO EL REAL)
+var sinfichar = document.getElementById("sinfichar");
+var fichado = document.getElementById("fichado");
+
+function toggleList() {
+  if (lista){
+    navlist.classList.replace("visible", "invisible");
+  } else {
+    navlist.classList.replace("invisible", "visible");
   }
+
+  lista = !lista;
+}
+
+function changeDark(btn) {
+  let moon = document.getElementById('moon');
+  let body = document.getElementById('body');
+  body.classList.replace("light", "dark");
+  moon.style.display = "block";
+  btn.style.display = "none";
+}
+
+function changeLight(btn) {
+  let sun = document.getElementById('sun');
+  let body = document.getElementById('body');
+  body.classList.replace("dark", "light");
+  sun.style.display = "block";
+  btn.style.display = "none";
+}
+
+function pauseFichar(btn) {
+  var elements = document.getElementsByClassName("botoncir");
+  Array.prototype.forEach.call(elements, function(button) {
+    if (button !== btn){
+      button.classList.replace("selected", "not-selected");
+    }
+  });
+
+  if (btn.classList.contains("not-selected")) {
+    btn.classList.replace("not-selected", "selected");
+  } else {
+    btn.classList.replace("selected", "not-selected");
+  }
+}
+
+function fichar() {
+  sinfichar.style.display = "none";
+  fichado.style.display = "flex";
+}
+
+function desfichar() {
+  sinfichar.style.display = "flex";
+  fichado.style.display = "none";
 }

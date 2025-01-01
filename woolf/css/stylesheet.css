@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  background: #323232FA;
+}
+
+canvas {
+  height: 50vh;
+  width: auto;
+  padding-left: 16px;
+}
+
+.noti {
+  width: fit-content;
+  height: fit-content;
+}
+
+.noti p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fafafa;
+  font-size: 1.2em;
+  padding: 1em;
+  padding-left: 20px;
+
+  animation: rainbow 2s linear infinite;
+}
+
+/* colors
+  'blue', '#5ab3b5'
+  'gold', '#EA0'
+  'orange', '#E62'
+  'magenta', '#C25'
+ */
+
+@keyframes rainbow {
+  10%, 50% {
+    color: #ffc0cb;
+  }
+
+  20%, 60% {
+    color: #ff748c;
+  }
+
+  30%, 70% {
+    color: #ff74a3;
+  }
+
+  40%, 80% {
+    color: #f62681;
+  }
+
+  90%{
+    color: #fafafa;
+  }
+}

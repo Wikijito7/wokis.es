@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wokis - Fullstack Developer</title>
+    <meta name="description" content="Discover the portfolio of Wokis, a fullstack developer with experience in innovative and creative projects.">
+    <meta name="keywords" content="Fullstack developer, portfolio, web development, backend, frontend, Java, Python, Kotlin, JavaScript, projects, Android developer, Android">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="icon" href="./img/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="./img/apple-icon.png">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <p class="left">Wokis</p>
+            <a id="lista" onclick="toggleList()"><i class="fas fa-list-ul" id="icon"></i></a>
+        </div>
+        <ul>
+            <li class="navlist invisible">
+                <a href="./" onclick="toggleList()">Home</a>
+            </li>
+            <li class="navlist invisible">
+                <a href="./#about" onclick="toggleList()">About me</a>
+            </li>
+            <li class="navlist invisible">
+                <a href="projects.html" onclick="toggleList()">Projects</a>
+            </li>
+            <li class="navlist invisible" id="twitter">
+                <a href="https://twitter.com/WokisHere" target="_blank" onclick="toggleList()"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li class="navlist invisible">
+                <a href="https://github.com/Wikijito7" target="_blank" onclick="toggleList()"><i class="fab fa-github"></i> Github</a>
+            </li>
+            <li class="navlist contact-invisible invisible">
+                <a href="mailto:wokis@wokis.es" onclick="toggleList()" href="#">Contact me</a>
+            </li>
+        </ul>
+        <div class="navlist contactme invisible">
+            <a class="right">Contact me</a>
+        </div>
+    </nav>
+    <div class="navlist contact-invisible invisible opacity"></div>
+    <main>
+        <header>
+            <section id="header-projects">
+                <h1 class="center">Projects</h1>
+                <p>These are some of the projects I've worked on over the years.</p>
+            </section>
+        </header>
+        <svg class="wave" style="transform:rotate(180deg) translateY(1px)" viewBox="0 0 1440 240" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 105, 54, 1)" offset="0%"></stop><stop stop-color="rgba(0, 105, 54, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,192L80,168C160,144,320,96,480,76C640,56,800,64,960,84C1120,104,1280,136,1440,136C1600,136,1760,104,1920,76C2080,48,2240,24,2400,48C2560,72,2720,144,2880,164C3040,184,3200,152,3360,124C3520,96,3680,72,3840,56C4000,40,4160,32,4320,32C4480,32,4640,40,4800,36C4960,32,5120,16,5280,44C5440,72,5600,144,5760,160C5920,176,6080,136,6240,108C6400,80,6560,64,6720,72C6880,80,7040,112,7200,116C7360,120,7520,96,7680,92C7840,88,8000,104,8160,108C8320,112,8480,104,8640,104C8800,104,8960,112,9120,108C9280,104,9440,88,9600,68C9760,48,9920,24,10080,32C10240,40,10400,80,10560,96C10720,112,10880,104,11040,116C11200,128,11360,160,11440,176L11520,192L11520,240L11440,240C11360,240,11200,240,11040,240C10880,240,10720,240,10560,240C10400,240,10240,240,10080,240C9920,240,9760,240,9600,240C9440,240,9280,240,9120,240C8960,240,8800,240,8640,240C8480,240,8320,240,8160,240C8000,240,7840,240,7680,240C7520,240,7360,240,7200,240C7040,240,6880,240,6720,240C6560,240,6400,240,6240,240C6080,240,5920,240,5760,240C5600,240,5440,240,5280,240C5120,240,4960,240,4800,240C4640,240,4480,240,4320,240C4160,240,4000,240,3840,240C3680,240,3520,240,3360,240C3200,240,3040,240,2880,240C2720,240,2560,240,2400,240C2240,240,2080,240,1920,240C1760,240,1600,240,1440,240C1280,240,1120,240,960,240C800,240,640,240,480,240C320,240,160,240,80,240L0,240Z"></path></svg>
+
+        <div id="ulProjects" class="projects">
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/projectfinance.png" alt="logo project finance">
+                    <p class="title-project">Project Finance</p>
+                </div>
+                
+                <p class="text-project">
+                    Project Finance is an Android App that let's you keep track of your deposits and expenses each month.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle kotlin"></span>
+                        <p>Kotlin</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/ProjectFinance-Android" target="_blank">Github repository</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/projectfinance.png" alt="logo project finance">
+                    <p class="title-project">Project Finance Server</p>
+                </div>
+                
+                <p class="text-project">
+                    Project Finance Server is the back-end server for the Android App. This server is made with Ktor.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle kotlin"></span>
+                        <p>Kotlin</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/ProjectFinance-Server" target="_blank">Github repository</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/pa.png" alt="logo projectalpha">
+                    <p class="title-project">ProjectAlpha</p>
+                </div>
+                
+                <p class="text-project">
+                    ProjectAlpha was a Minecraft server co-developed with <a href="https://cadox8.es" target="_blank">Cadox</a>. 
+                    We developed every plugin that it had from scratch, doing it in Java. 
+                    Also, we deployed it on our dedicated server and we managed it.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle java"></span>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://github.com/cadox8/PA" target="_blank">Github repository</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/ccc.png" alt="logo cardscardscards">
+                    <p class="title-project">CardsCardsCards</p>
+                </div>
+                
+                <p class="text-project">
+                    CardsCardsCards was a cards game based on YuGiOh cards with funny pictures from Spain co-developed with <a href="https://cadox8.es" target="_blank">Cadox</a>.
+                     The game was developed in Java and it had both a Client and a Server module.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle java"></span>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://wikijito7.github.io/CardsCardsCards/">Game's page</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/anytime.png" alt="logo anytime">
+                    <p class="title-project">Anytime</p>
+                </div>
+                
+                <p class="text-project">
+                    Anytime is a web app that allows you to follow your job shifts. It simulates a clock in and clock out system of a real job.
+                    As a user, you can edit your profile and clock in/out. As an admin, you can edit the shifts of the users.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle javascript"></span>
+                        <p>Javascript</p>
+                    </div>
+
+                    <div class="row-langs">
+                        <span class="circle kotlin"></span>
+                        <p>Kotlin</p>
+                    </div>
+
+                    <div class="row-langs">
+                        <span class="circle sass"></span>
+                        <p>SASS</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/anytime" target="_blank">Github repository</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/icon-192.png" alt="no logo">
+                    <p class="title-project">ECIBot</p>
+                </div>
+                
+                <p class="text-project">
+                    ECIBot is a custom Discord bot. It has a lot of commands and features, such as a music player, Dalle support, GPT3 support, etc.
+                    ECIBot can be used in any Discord server.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle python"></span>
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/ECIBot" target="_blank">Github repository</a>
+                </div>
+            </div>
+            
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/keepit.png" alt="logo keepit">
+                    <p class="title-project">Keepit</p>
+                </div>
+                
+                <p class="text-project">
+                    Keepit is a note program. It's that simple. It was developed as a final project for my development
+                    degree. You can create, view, delete and search notes by title, category or label.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle python"></span>
+                        <p>Python</p>
+                    </div>
+                </div>
+
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/keepit" target="_blank">Github repository</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/icon-192.png" alt="no logo">
+                    <p class="title-project">Spanish Card Game</p>
+                </div>
+
+                <p class="text-project">
+                    Spanish Card Game is a project written in Python based on the "Mona" Spanish card game. 
+                    It supports up to 10 players and uses the Pygame library for a better graphical interface. 
+                    The game is infinite and always has a winner.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle python"></span>
+                        <p>Python</p>
+                    </div>
+                </div>
+                
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/cards" target="_blank">Github repository</a>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/icon-192.png" alt="no logo">
+                    <p class="title-project">LifeProject</p>
+                </div>
+                <p class="text-project">
+                    LifeProject was a Java-based game focused on survival and city management, where you acted as the "god" of a civilization, 
+                    managing resources like food, water, wood, and stone. The goal was to make it challenging for the civilization to grow, 
+                    with enemies and random events adding difficulty. The project is currently paused and reached the "0.8-indev" version.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle java"></span>
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col project">
+                <div class="row-project image-header">
+                    <img src="img/logospacedroid.png" alt="logo spacedroid">
+                    <p class="title-project">SpaceDroid</p>
+                </div>
+
+                <p class="text-project">
+                    SpaceDroid is a retro-inspired game where you destroy enemy ships and collect power-ups to increase your score.
+                    The game is made with Java.
+                </p>
+
+                <div class="row-project langs">
+                    <div class="row-langs">
+                        <span class="circle java"></span>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="row-project">
+                    <a href="https://github.com/Wikijito7/spacedroid" target="_blank">Github repository</a>
+                </div>
+            </div>
+        </div>
+        <svg class="wave" style="transform:rotate(0deg) translateY(1px);" viewBox="0 0 1440 240" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(27, 31, 36, 1)" offset="0%"></stop><stop stop-color="rgba(27, 31, 36, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-1)" d="M0,192L80,168C160,144,320,96,480,76C640,56,800,64,960,84C1120,104,1280,136,1440,136C1600,136,1760,104,1920,76C2080,48,2240,24,2400,48C2560,72,2720,144,2880,164C3040,184,3200,152,3360,124C3520,96,3680,72,3840,56C4000,40,4160,32,4320,32C4480,32,4640,40,4800,36C4960,32,5120,16,5280,44C5440,72,5600,144,5760,160C5920,176,6080,136,6240,108C6400,80,6560,64,6720,72C6880,80,7040,112,7200,116C7360,120,7520,96,7680,92C7840,88,8000,104,8160,108C8320,112,8480,104,8640,104C8800,104,8960,112,9120,108C9280,104,9440,88,9600,68C9760,48,9920,24,10080,32C10240,40,10400,80,10560,96C10720,112,10880,104,11040,116C11200,128,11360,160,11440,176L11520,192L11520,240L11440,240C11360,240,11200,240,11040,240C10880,240,10720,240,10560,240C10400,240,10240,240,10080,240C9920,240,9760,240,9600,240C9440,240,9280,240,9120,240C8960,240,8800,240,8640,240C8480,240,8320,240,8160,240C8000,240,7840,240,7680,240C7520,240,7360,240,7200,240C7040,240,6880,240,6720,240C6560,240,6400,240,6240,240C6080,240,5920,240,5760,240C5600,240,5440,240,5280,240C5120,240,4960,240,4800,240C4640,240,4480,240,4320,240C4160,240,4000,240,3840,240C3680,240,3520,240,3360,240C3200,240,3040,240,2880,240C2720,240,2560,240,2400,240C2240,240,2080,240,1920,240C1760,240,1600,240,1440,240C1280,240,1120,240,960,240C800,240,640,240,480,240C320,240,160,240,80,240L0,240Z"></path></svg>    <footer>
+    </main>
+    <footer>
+        <p>
+            Wokis' website <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Wokis.<br>
+            Copyright © 2020 - <span id="currentyear"></span> Wokis.<br>
+            <a href="https://github.com/Wikijito7/Wikijito7.github.io">I'm open source!</a>
+        </p>
+    </footer>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script defer src="js/wokis.js"></script>
+</body>
+</html>

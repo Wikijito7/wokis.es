@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+
+body {
+  margin: 2em auto;
+  padding: 0 2em;
+  font-size: 1em;
+  max-width: 1240px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+section, header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header {
+  margin-bottom: 6em;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+header > * {
+  flex: 0 1 calc(100%/2);
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+section article {
+  min-width: calc(100%/2);
+  flex: 0 1 calc(100%/2);
+  margin-bottom: 1.5em;
+  height: fit-content;
+}
+
+article p {
+  max-width: 400px;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.fa-star, .fa-star-half-alt {
+  color: #01B05B;
+}
+
+.enlaces {
+  display: flex;
+  flex-flow: column;
+}
+
+.enlaces a {
+  text-decoration: none;
+  color: #1f66e5;
+}
+
+.enlaces a:hover {
+  color: #1347a4;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0.5em 0;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 300px;
+  font-size: 1.05em;
+  font-weight: 500;
+  align-items: center;
+}
+
+li > span {
+  margin-left: auto;
+}
+
+span {
+  margin: 0.5em 0;
+}
+
+.educacion > div {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 500px;
+  align-items: baseline;
+  margin-bottom: 1.2em;
+}
+
+.fecha-lugar {
+  margin-right: 1.5em;
+  font-weight: 300;
+  color: #101010;
+  width: 7em;
+}
+
+.fecha-lugar > span {
+  margin: 0.25em 0;
+}
+
+div > .info-edu, .fecha-lugar {
+  display: flex;
+  flex-flow: column;
+}
+
+.info-edu > span {
+  margin: 0.25em 0;
+  text-align: justify;
+}
+
+span > * {
+  margin-right: 0.5em;
+}
+
+@media only screen and (max-width: 760px){
+  section, header {
+    flex-flow: column;
+    margin: auto;
+    min-width: unset;
+    flex-basis: unset;
+  }
+}

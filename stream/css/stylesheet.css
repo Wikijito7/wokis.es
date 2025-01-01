@@ -1,0 +1,59 @@
+.hidden {
+  display: none;
+}
+
+body {
+  background: #111;
+}
+
+.alert {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 auto;
+}
+
+.console-container, .usermessage {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;  text-align: left;
+  font-size: 2em;
+  text-align: left;
+  height: fit-content;
+  width: fit-content;
+  color: #33FF00;
+  padding: 1.2rem;
+
+  animation: glitch 5s linear infinite;
+}
+
+.usermessage {
+  font-size: 1em;
+}
+
+@keyframes glitch {
+  2%,64%{
+    filter: saturate(5.5);
+    transform: translate(2px, 5px) skew(0deg);
+    text-shadow: -2px -2px #ff0033;
+  }
+
+  4%,60%{
+    filter: saturate(10.6);
+    transform: translate(-2px, -2px) skew(0deg);
+    text-shadow: 2px 2px #0033ff;
+  }
+
+  62%m, 70%{
+    filter: saturate(20.4);
+    transform: translate(1px,0px) skew(2deg);
+    text-shadow: 2px -2px #ff00b3;
+  }
+
+  80%, 82% {
+    filter: saturate(1);
+    transform: translate(-1px,0px) skew(-2deg);
+    text-shadow: -2px 2px #4d00ff;
+  }
+
+  90% {
+    text-shadow: none;
+  }
+}
